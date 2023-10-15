@@ -1,18 +1,8 @@
 import React from 'react';
-import { View } from 'react-native';
-import Home from 'screens/home';
+import Navigation from './src/navigation';
 
 const App = () => {
-  return (
-    <View
-      style={{
-        justifyContent: 'center',
-        alignItems: 'center',
-        flex: 1,
-      }}>
-      <Home />
-    </View>
-  );
+  return <Navigation />;
 };
 
 export default App;
