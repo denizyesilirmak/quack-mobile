@@ -7,6 +7,7 @@ import {
 
 //TODO: Import using alias
 import Home from '../../screens/home';
+import Icon from '@components/icon';
 
 const Tabs = createBottomTabNavigator<MainBottomTabParamList>();
 
@@ -14,6 +15,9 @@ const screens: Array<MainBottomTabRoutesType> = [
   {
     name: 'Home',
     component: Home,
+    options: {
+      tabBarIcon: () => <Icon name="home" />,
+    },
   },
 ];
 
