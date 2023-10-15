@@ -1,8 +1,5 @@
 import {Text as RNText} from 'react-native';
-
-type TextProps = {
-  children: string;
-};
+import {TextProps} from './types';
 
 const Text = ({children}: TextProps) => {
   return <RNText>{children}</RNText>;
