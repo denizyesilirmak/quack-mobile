@@ -11,7 +11,7 @@ module.exports = {
           '@assets': './src/assets',
           '@utils': './src/utils',
           '@constants': './src/constants',
-          '@navigations': './src/navigations',
+          '@navigation': './src/navigation',
           '@screens': './src/screens',
           '@hooks': './src/hooks',
         },
