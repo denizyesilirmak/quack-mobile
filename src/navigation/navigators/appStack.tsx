@@ -2,10 +2,18 @@ import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import MainBottomTab from './mainBottomTab';
 import { AppStackParamList, AppStackRoutesType } from '@navigation/types';
+import AuthStack from './authStack';
 
 const Stack = createStackNavigator<AppStackParamList>();
 
 const screens: Array<AppStackRoutesType> = [
+  {
+    name: 'Auth',
+    component: AuthStack,
+    options: {
+      headerShown: false,
+    },
+  },
   {
     name: 'Main',
     component: MainBottomTab,

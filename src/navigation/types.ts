@@ -10,9 +10,24 @@ import type {
   StackNavigationOptions,
 } from '@react-navigation/stack';
 
+//Define the types for the AuthStackParamList
+
+type AuthStackParamList = {
+  Login: undefined;
+};
+
+type AuthStackRoutesType = RouteConfig<
+  AuthStackParamList,
+  keyof AuthStackParamList,
+  StackNavigationState<AuthStackParamList>,
+  StackNavigationOptions,
+  StackNavigationEventMap
+>;
+
 // Define the types for the AppStackParamList
 
 type AppStackParamList = {
+  Auth: undefined;
   Main: undefined;
 };
 
@@ -38,9 +53,25 @@ type MainBottomTabRoutesType = RouteConfig<
   BottomTabNavigationEventMap
 >;
 
+type QuizStackParamList = {
+  Quiz: undefined;
+};
+
+type QuizStackRoutesType = RouteConfig<
+  QuizStackParamList,
+  keyof QuizStackParamList,
+  StackNavigationState<QuizStackParamList>,
+  StackNavigationOptions,
+  StackNavigationEventMap
+>;
+
 export type {
   AppStackParamList,
   AppStackRoutesType,
   MainBottomTabRoutesType,
   MainBottomTabParamList,
+  QuizStackParamList,
+  QuizStackRoutesType,
+  AuthStackParamList,
+  AuthStackRoutesType,
 };
